@@ -1,0 +1,20 @@
+<div class="jumbotron list-content" class="col col-md-5">
+    <ul class="list-group">
+        <li href="#" class="list-group-item title">
+            All Users
+        </li>
+        <li href="#" class="list-group-item text-left" ng-repeat="user in users">
+            <img class="img-thumbnail" ng-src="pub/media/user/profile/picture?login={{user.login}}"
+                 style="height: 100px; width: 100px">
+            <label class="name">
+                {{user.login}}<br>
+            </label>
+            <label class="pull-right">
+                <a class="btn btn-success btn-xs" title="View" ui-sref="profile/{{user.id}}"><span class="glyphicon glyphicon-user"></span></a>
+                <button class="btn btn-danger  btn-xs glyphicon glyphicon-trash" title="Delete" ng-click="deleteUser(user.login)"></button>
+                <button class="btn btn-info  btn-xs glyphicon glyphicon glyphicon-plus" title="Add as a Friend"></button>
+            </label>
+            <div class="break"></div>
+        </li>
+    </ul>
+</div>

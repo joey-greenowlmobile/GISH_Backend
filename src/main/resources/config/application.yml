@@ -1,0 +1,26 @@
+management.security.enabled: true
+security.basic.enabled: false
+endpoints.jolokia.enabled: false
+greenowl.security.rememberme.key: 0a7a13470a86f6c2422281cc43c1cba00bdc21f5
+
+async:
+    corePoolSize: 5
+    maxPoolSize: 50
+    queueCapacity: 10000
+
+spring:
+    messageSource:
+        cacheSeconds: 1
+
+authentication:
+    xauth:
+        secret: Gmglkajs # Unique! used in X-AUTH-TOKEN
+        tokenValidityInSeconds: 1800
+
+swagger:
+    title: Greenowl Information Service Hub API
+    description: GISH - Greenowl Service API
+    termsOfServiceUrl:
+    contact: ahmed.aly@greenowlmobile.com
+    license:
+    licenseUrl:

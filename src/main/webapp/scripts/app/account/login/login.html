@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <div class="login-panel panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Authentication</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="alert alert-danger" ng-show="!loading && authenticationError"
+                         translate="login.messages.error.authentication">
+                        <strong>Authentication failed!</strong> Please check your credentials and try again.
+                    </div>
+                    <form role="form">
+                        <fieldset>
+                            <div class="form-group">
+                                <input class="form-control" placeholder="Username" name="email" type="text" autofocus="" ng-model="username">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" placeholder="Password" name="password" type="password" value="" ng-model="password">
+                            </div>
+                            <!-- Change this to a button or input when using this as a form -->
+                            <button type="submit" ng-click="login()" class="btn btn-lg btn-success btn-block">Login</button>
+                        </fieldset>
+                    </form>
+                    <p></p>
+                    <p></p>
+                    <div ng-dblclick="autoLogin()" ng-show="!loading" class="alert alert-warning"
+                         translate="global.messages.info.register">
+                        You don't have an account yet? <a href=\"#/register\">Register a new account</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
