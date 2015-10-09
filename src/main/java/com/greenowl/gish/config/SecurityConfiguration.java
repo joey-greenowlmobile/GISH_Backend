@@ -25,6 +25,20 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 
 import javax.inject.Inject;
 
+/**
+ * <p>
+ * Created by ahmed aly 2015-03-27
+ * Configures Spring Security container to allow passing of static resources and authentication filtering.
+ * This method also passes the custom XAuth implementation to Spring Security as a delegate.
+ * A PasswordEncoder bean is defined in this file which uses a standard BCryptPasswordEncoder.
+ * The encoder uses the default settings which means a default hash and salt value. Increasing this value will
+ * cause an exponential increase in the effort in breaking the encryption, but create more secure passwords.
+ * </p>
+ * <p>
+ * Please do not make any changes to this file unless you fully understand how the security module works!.
+ * Useful Doc -> <url>https://en.wikipedia.org/wiki/Bcrypt</url>
+ * </p>
+ */
 @Configuration
 @EnableWebSecurity
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
