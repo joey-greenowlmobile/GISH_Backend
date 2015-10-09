@@ -8,8 +8,10 @@ angular.module('mainApp')
 
         $scope.logout = function () {
             Auth.logout();
-            $state.go('home');
+            $state.go('login');
         };
+
+
 
         $scope.collapse = function (id) {
             var myEl = angular.element(document.querySelector(id));

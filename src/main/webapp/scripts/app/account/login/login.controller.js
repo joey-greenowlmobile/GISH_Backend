@@ -25,6 +25,5 @@ angular.module('mainApp')
                 $scope.authenticationError = true;
                 $scope.loading = false;
             });
-
         };
     });

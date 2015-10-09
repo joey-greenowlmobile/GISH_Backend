@@ -10,4 +10,8 @@ angular.module('mainApp')
         if(!Principal.isAuthenticated()){
             $state.go('login');
         }
+
+        $scope.isAuthenticated = function(){
+            return Principal.isAuthenticated();
+        }
     });
