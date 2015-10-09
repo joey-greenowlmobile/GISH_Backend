@@ -2,10 +2,9 @@ package com.greenowl.gish.config;
 
 /**
  * Spring Configuration Class responsible for creating any beans involved in configuring
- * Queues. The current implementation is RabbitMq, this is abstracted using the Spring AMQP
- * module.
+ * Queues.
  */
-//@Configuration
+//@Configuration // TODO: Implement a Queue system (if needed).
 public class QueueConfiguration {
 
 }
