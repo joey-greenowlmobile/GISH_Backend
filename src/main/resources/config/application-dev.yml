@@ -40,9 +40,6 @@ spring:
         mode: XHTML
         cache: false
 
-search:
-    host: 54.152.190.66
-
 metrics:
     jmx.enabled: true
     graphite:
