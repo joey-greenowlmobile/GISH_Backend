@@ -11,7 +11,7 @@ public interface BusArrivalPredictionRepository extends JpaRepository<BusArrival
 	@SuppressWarnings("unchecked")
 	public BusArrivalPrediction save(BusArrivalPrediction prediction);
 	
-	public BusArrivalPrediction findByStopTagAndAgencyAndTransitModeAndZone(String stopTag, String agency, String transitMode, String zone);
+	public BusArrivalPrediction findByStopTagAndRouteIdAndAgencyAndTransitModeAndZone(String stopTag,int routeId,String agency, String transitMode, String zone);
 	
 	public void deleteAllInBatch();
 

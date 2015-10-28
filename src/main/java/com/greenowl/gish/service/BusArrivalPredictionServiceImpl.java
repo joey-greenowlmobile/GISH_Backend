@@ -7,7 +7,7 @@ public class BusArrivalPredictionServiceImpl implements BusArrivalPredictionServ
 
 	private BusArrivalPredictionRepository busArrivalPredictionRepository;
 	
-	public BusArrivalPrediction findByStopTagAndAgencyAndTransitModeAndZone(String stopTag, String agency, String transitMode, String zone){
-		return busArrivalPredictionRepository.findByStopTagAndAgencyAndTransitModeAndZone(stopTag, agency, transitMode, zone);
+	public BusArrivalPrediction findByStopTagAndRouteIdAndAgencyAndTransitModeAndZone(String stopTag, int routeId, String agency, String transitMode, String zone){
+		return busArrivalPredictionRepository.findByStopTagAndRouteIdAndAgencyAndTransitModeAndZone(stopTag, routeId, agency, transitMode, zone);
 	}
 }
