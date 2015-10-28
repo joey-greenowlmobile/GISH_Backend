@@ -4,9 +4,13 @@ import java.util.List;
 
 import javax.inject.Inject;
 
+import org.springframework.stereotype.Service;
+
 import com.greenowl.gish.domain.BusStop;
 import com.greenowl.gish.repository.BusStopRepository;
 
+@SuppressWarnings("SpringJavaAutowiringInspection")
+@Service
 public class BusStopServiceImpl implements BusStopService{
 
 	@Inject
