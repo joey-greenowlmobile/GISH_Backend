@@ -6,23 +6,22 @@ import java.util.Date;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Lob;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "T_BUS_LOCATION")
 public class BusLocation implements Serializable{
 
-	private static final long serialVersionUID = 2143178L;
-	
 	@Id
 	private int routeId;
 	
 	private String agency;
 	
-	@Column(name="locationXml",columnDefinition="TEXT")
+	@Lob
 	private String locationXml;
 	
-	@Column(name="locationJson",columnDefinition="TEXT")
+	@Lob
 	private String locationJson;
 	
 	@Column(name="updateTime",columnDefinition="DATETIME")
