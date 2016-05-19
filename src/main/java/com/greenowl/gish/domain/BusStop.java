@@ -21,7 +21,7 @@ public class BusStop implements Serializable{
 	
 	private double lon;
 	
-	private double lan;
+	private double lat;
 	
 	private String title;
 	@Id
@@ -56,12 +56,12 @@ public class BusStop implements Serializable{
 		this.lon = lon;
 	}
 
-	public double getLan() {
-		return lan;
+	public double getLat() {
+		return lat;
 	}
 
-	public void setLan(double lan) {
-		this.lan = lan;
+	public void setLat(double lat) {
+		this.lat = lat;
 	}
 
 	public String getTitle() {

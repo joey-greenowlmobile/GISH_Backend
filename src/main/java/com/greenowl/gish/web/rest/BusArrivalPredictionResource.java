@@ -16,7 +16,7 @@ import com.greenowl.gish.service.BusArrivalPredictionService;
 @RestController
 @RequestMapping("/api/transit")
 public class BusArrivalPredictionResource {
-	private static final Logger LOG = LoggerFactory.getLogger(AdminResource.class);
+	private static final Logger LOG = LoggerFactory.getLogger(BusArrivalPredictionResource.class);
     @Inject
     private BusArrivalPredictionService busArrivalPredictionService;
     @RequestMapping(value = "/predictions",
